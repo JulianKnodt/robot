@@ -18,5 +18,5 @@ class drivetrain{
     void setSpeed(double speed);
     void stop();
     void update();
-}
+};
 #endif

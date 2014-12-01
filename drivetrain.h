@@ -14,8 +14,8 @@ class drivetrain{
   public:
     drivetrain():
     void init();
-    void disable();
-    void setSpeed();
+    void rotate(double angle);
+    void setSpeed(double speed);
     void stop();
     void update();
 }

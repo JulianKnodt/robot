@@ -15,7 +15,6 @@ class drivetrain{
     drivetrain():
     void init();
     void disable();
-    void driveD();
     void setSpeed();
     void stop();
     void update();

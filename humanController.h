@@ -8,7 +8,7 @@ class humanController{
       Joystick X;
       Joystick Y;
     public:
-      Human Controller();
+      humanController();
       double getHorizontal();
       double getVertical();
       void update();

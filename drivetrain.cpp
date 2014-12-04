@@ -12,7 +12,7 @@ void drivetrain::update(){
 	leftFrontVic.set(-currentSpeed - currentRotate);
 	leftBackVic.set(-currentSpeed - currentRotate);
 	rightFrontVic.set(currentSpeed - currentRotate);
-	rightBackVic.set(currentSpeed-currentRotate);
+	rightBackVic.set(currentSpeed - currentRotate);
 	}
 void drivetrain::setSpeed(double speed){
 	currentSpeed = speed;

@@ -66,7 +66,7 @@ void robot::TeleopDisabled() {
 void robot::TestInit() {
 }
 
-void EricBot::TestPeriodic() {
+void robot::TestPeriodic() {
 }
 
-START_ROBOT_CLASS(EricBot);
+START_ROBOT_CLASS(robot);

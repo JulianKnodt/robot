@@ -5,9 +5,9 @@
 class robot: public IterativeRobot
 {
 	private:
-		DriveTrain Drivetrain;
-		HumanController HumanController;
-		CommandSys CommandSys;
+		Drivetrain drivetrain;
+		HumanController humanController;
+		Command command;
 	
 	public:
 		robot();
@@ -54,9 +54,9 @@ void Robot::TeleopInit() {
 
 void Robot::TeleopPeriodic() {
 	cout << "This program is working" << endl;
-	HumanController.update();
-	CommandSys.transferAll();
-	Drivetrain.update();
+	humanController.update();
+	Command.transferAll();
+	drivetrain.update();
 }
 
 void Robot::TeleopDisabled() {

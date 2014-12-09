@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <iostream>
 
-class drivetrain{
+class Drivetrain{
   private:
     Victor leftFrontVic;
     Victor leftBackVic;
@@ -12,7 +12,7 @@ class drivetrain{
     Victor rightBackVic;
   
   public:
-    drivetrain():
+    Drivetrain():
     void init();
     void rotate(double angle);
     void setSpeed(double speed);

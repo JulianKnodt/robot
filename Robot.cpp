@@ -24,8 +24,8 @@ class robot: public IterativeRobot
 		void TestPeriodic();
 };
 robot::robot():
-	Drivetrain(),
-	HumanController(),
+	drivetrain(),
+	humanController(),
 	command(&drivetrain, &humanController) 
 {
 

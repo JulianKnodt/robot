@@ -2,7 +2,7 @@
 #include "WPILib.h"
 Command::Command(DriveTrain *trainPointer, HumanController *humanPointer){
   this->trainPointer = trainPointer;
-  this->humanPointer = human pointer;
+  this->humanPointer = humanPointer;
 }
 void Command::transfer(){
   switch(transferType){

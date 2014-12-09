@@ -5,9 +5,9 @@
 class robot: public IterativeRobot
 {
 	private:
-		DriveTrain drivetrain;
-		HumanController humanController;
-		CommandSys commandSys;
+		DriveTrain Drivetrain;
+		HumanController HumanController;
+		CommandSys CommandSys;
 	
 	public:
 		robot();
@@ -24,49 +24,49 @@ class robot: public IterativeRobot
 		void TestPeriodic();
 };
 robot::robot():
-	drivetrain(),
-	humanController(),
+	Drivetrain(),
+	HumanController(),
 	command(&drivetrain, &humanController) 
 {
 
 }
 
-void robot::RobotInit() {
+void Robot::RobotInit() {
 }
 
-void robot::AutonomousInit() {
+void Robot::AutonomousInit() {
 }
 
-void robot::AutonomousPeriodic() {
+void Robot::AutonomousPeriodic() {
 }
 
-void robot::AutonomousDisabled() {
+void Robot::AutonomousDisabled() {
 }
 
-void robot::DisabledInit() {
+void Robot::DisabledInit() {
 }
 
-void robot::DisabledPeriodic() {
+void Robot::DisabledPeriodic() {
 }
 
-void robot::TeleopInit() {
+void Robot::TeleopInit() {
 }
 
-void robot::TeleopPeriodic() {
+void Robot::TeleopPeriodic() {
 	cout << "This program is working" << endl;
-	humanController.update();
-	commandSys.transferAll();
-	drivetrain.update();
+	HumanController.update();
+	CommandSys.transferAll();
+	Drivetrain.update();
 }
 
-void robot::TeleopDisabled() {
+void Robot::TeleopDisabled() {
 
 }
 
-void robot::TestInit() {
+void Robot::TestInit() {
 }
 
-void robot::TestPeriodic() {
+void Robot::TestPeriodic() {
 }
 
-START_ROBOT_CLASS(robot);
+START_ROBOT_CLASS(Robot);

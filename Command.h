@@ -6,7 +6,7 @@
 class command
 {
     private:
-        drivetrain *trainpointer;
+        drivetrain *trainPointer;
         HumanController *humanPointer;
 	      typedef enum TransferType
 	      {

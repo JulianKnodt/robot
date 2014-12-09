@@ -55,7 +55,7 @@ void Robot::TeleopInit() {
 void Robot::TeleopPeriodic() {
 	cout << "This program is working" << endl;
 	humanController.update();
-	Command.transferAll();
+	command.transferAll();
 	drivetrain.update();
 }
 

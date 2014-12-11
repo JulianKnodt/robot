@@ -14,7 +14,7 @@ void Drivetrain::update(){
 	rightFrontVic.set(currentSpeed - currentRotate);
 	rightBackVic.set(currentSpeed - currentRotate);
 	}
-void Drivetrain::setSpeed(double speed){
+void Drivetrain::speedSet(double speed){
 	currentSpeed = speed;
 	}
 void Drivetrain::rotate(double angle){

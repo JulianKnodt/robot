@@ -7,6 +7,7 @@ class HumanController{
       double verticalValue;
       Joystick X;
       Joystick Y;
+      Robot *robot;
     public:
       HumanController();
       double getHorizontal();

@@ -15,7 +15,7 @@ class Drivetrain{
     Drivetrain();
     void init();
     void rotate(double angle);
-    void setSpeed(double speed);
+    void speedSet(double speed);
     void stop();
     void update();
 };

@@ -7,7 +7,6 @@ class robot: public IterativeRobot
 	private:
 		Drivetrain drivetrain;
 		HumanController humanController;
-		Command command;
 	
 	public:
 		robot();
@@ -25,8 +24,7 @@ class robot: public IterativeRobot
 };
 robot::robot():
 	drivetrain(),
-	humanController(),
-	command(&drivetrain, &humanController) 
+	humanController()
 {
 
 }

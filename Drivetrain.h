@@ -1,4 +1,4 @@
-#ifndef DRIVETRAIN_H
+
 #ifndef DRIVETRAIN_H
 #include <WPILib.h>
 #include <stdlib.h>
@@ -12,7 +12,7 @@ class Drivetrain{
     Victor rightBackVic;
   
   public:
-    Drivetrain():
+    Drivetrain();
     void init();
     void rotate(double angle);
     void setSpeed(double speed);

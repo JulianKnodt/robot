@@ -10,6 +10,8 @@ class Drivetrain{
     Victor leftBackVic;
     Victor rightFrontVic;
     Victor rightBackVic;
+    double currentSpeed;
+    double currentRotate;
   
   public:
     Drivetrain();

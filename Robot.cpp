@@ -1,15 +1,14 @@
 #include <WPILib.h>
 #include "humanController.h"
-#include "Command.h"
-#include "DriveTrain.h"
-class robot: public IterativeRobot
+#include "Drivetrain.h"
+class Robot: public IterativeRobot
 {
 	private:
 		Drivetrain drivetrain;
 		HumanController humanController;
 	
 	public:
-		robot();
+		Robot();
 		void RobotInit();
 		void AutonomousInit();
 		void AutonomousPeriodic();
@@ -22,7 +21,7 @@ class robot: public IterativeRobot
 		void TestInit();
 		void TestPeriodic();
 };
-robot::robot():
+Robot::Robot():
 	drivetrain(),
 	humanController()
 {
@@ -53,7 +52,6 @@ void Robot::TeleopInit() {
 void Robot::TeleopPeriodic() {
 	cout << "This program is working" << endl;
 	humanController.update();
-	command.transferAll();
 	drivetrain.update();
 }
 
